@@ -83,6 +83,10 @@ a{
     position: relative;
     top: -2.5em;
 }
+footer{
+    color: white;
+    background-color: #13274f;
+}
 @media only screen and (max-width: 480px){
     header{
         top: -0.43em;
