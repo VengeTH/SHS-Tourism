@@ -6,7 +6,7 @@ header {
     color: white;
     display: flex;
     background-color: #13274f;
-    top: -0.3em;
+    top: -0.472em;
     left: -0.5rem;
     width: 100vw;
     height: 3em;
@@ -87,17 +87,17 @@ footer{
     position: relative;
     color: white;
     background-color: #13274f;
-    bottom: -3em;
     height: 5em;
     left: -0.5rem;
     width: 100vw;
+    top: 3em;
 }
 footer a{
     display: inline-block;
 }
 .contactUs{
     position: relative;
-    top: 1em;
+    top: -1em;
     left: 38vw;
     width: fit-content;
 }
@@ -108,12 +108,17 @@ footer a{
     border-radius: 0.5em;
     width: 8em;
     height: 2.4em;
-    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     font-size: large;
+}
+.ig{
+    background-color: black;
+    position: relative;
+    top: 1.4em;
+    width: 5%;
 }
 @media only screen and (max-width: 480px){
     header{
