@@ -84,11 +84,36 @@ a{
     top: -2.5em;
 }
 footer{
+    position: relative;
     color: white;
     background-color: #13274f;
-    position: relative;
-    bottom: -1em;
+    bottom: -3em;
+    height: 5em;
+    left: -0.5rem;
     width: 100vw;
+}
+footer a{
+    display: inline-block;
+}
+.contactUs{
+    position: relative;
+    top: 1em;
+    left: 38vw;
+    width: fit-content;
+}
+.abtUs{
+    background-color: #13ae5b;
+    color: white;
+    border: 3px solid #006436;
+    border-radius: 0.5em;
+    width: 8em;
+    height: 2.4em;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: large;
 }
 @media only screen and (max-width: 480px){
     header{
