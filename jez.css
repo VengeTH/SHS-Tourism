@@ -6,7 +6,7 @@ body {
     margin: 0;
     min-height: 100%;
     background-color: white;
-    padding-bottom: 6.74rem;
+    padding-bottom: 3rem;
 }
 header {
     position: relative;
@@ -16,7 +16,7 @@ header {
     top: -0.472em;
     left: 0;
     right: 0;
-    height: 7em;
+    height: 6em;
     justify-content: space-between;
     align-items: center;
 }
@@ -40,7 +40,6 @@ a{
     background-color: black;
     border-radius: 5px;
     padding: 10px;
-    width: fit-content;
 }
 .touristSpot{
     color: white;
@@ -48,14 +47,18 @@ a{
     border-radius: 5px;
     position: relative;
     top: 3em;
-    width: fit-content;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
     margin: 1em;
     background-color: #002877;
+}.exploreText, .touristSpot {
+    width: -moz-fit-content; /* For Firefox compatibility */
+    width: -webkit-fit-content; /* For Safari compatibility */
+    width: fit-content; /* Standard */
 }
+
 .touristLearnMore{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
@@ -122,6 +125,12 @@ footer a{
     font-size: large;
 }
 .ig{
+    position: relative;
+    top: 1em;
+    left: 10%;
+    width: 5%;
+}
+.fb{
     position: relative;
     top: 1em;
     left: 10%;
