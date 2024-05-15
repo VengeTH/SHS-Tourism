@@ -1,5 +1,12 @@
+html{
+    height: 100%;
+}
 body {
+    position: relative;
+    margin: 0;
+    min-height: 100%;
     background-color: white;
+    padding-bottom: 6.74rem;
 }
 header {
     position: relative;
@@ -7,9 +14,9 @@ header {
     display: flex;
     background-color: #13274f;
     top: -0.472em;
-    left: -0.5rem;
-    width: 100vw;
-    height: 3em;
+    left: 0;
+    right: 0;
+    height: 7em;
     justify-content: space-between;
     align-items: center;
 }
@@ -84,22 +91,22 @@ a{
     top: -2.5em;
 }
 footer{
-    position: relative;
+    position: absolute;
     color: white;
     background-color: #13274f;
-    height: 5em;
-    left: -0.5rem;
-    width: 100vw;
-    top: 3em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: auto;
 }
 footer a{
     display: inline-block;
 }
 .contactUs{
     position: relative;
-    top: -1em;
+    top: 0em;
     left: 38vw;
-    width: fit-content;
+    width: 50vw;
 }
 .abtUs{
     background-color: #13ae5b;
@@ -115,9 +122,9 @@ footer a{
     font-size: large;
 }
 .ig{
-    background-color: black;
     position: relative;
-    top: 1.4em;
+    top: 1em;
+    left: 10%;
     width: 5%;
 }
 @media only screen and (max-width: 480px){
