@@ -110,7 +110,7 @@ footer{
 .contactUs{
     position: relative;
     top: -1.6em;
-    left: 39vw;
+    left: 41vw;
     width: fit-content;
     width: -moz-fit-content; /* For Firefox compatibility */
     width: -webkit-fit-content; /* For Safari compatibility */
@@ -134,7 +134,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     top: 1.7em;
-    left: 60em;
+    left: 66em;
     height: fit-content;
     height: -moz-fit-content; /* For Firefox compatibility */
     height: -webkit-fit-content; /* For Safari compatibility */
@@ -147,6 +147,10 @@ footer{
 .logos a{
     display: inline-block;
     width: 50%;
+}
+.fb{
+    position: relative;
+    left: -1em;
 }
 @media only screen and (max-width: 480px){
     header{
@@ -199,7 +203,7 @@ footer{
     footer{
         left: 0;
         right: 0;
-        bottom: 0;
+        bottom: 1;
     }
     .contactUs{
         top: .6em;
@@ -207,10 +211,16 @@ footer{
         right: 0;
         margin: auto;
     }
-    .ig{
-        width: 25%;
+    .abtUs{
+        position: relative;
+        top: -2em;
+        left: -3.5em;
+    }
+    .logos{
+        left: 15em;
     }
     .fb{
-        width: 25%;
+        position: relative;
+        left: -2em;
     }
 }
