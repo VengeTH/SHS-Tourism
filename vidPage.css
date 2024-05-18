@@ -1,0 +1,10 @@
+body{
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    background-color: white;
+    padding-bottom: 6rem;
+}
+.vid{
+    width: 100vw;
+}
