@@ -21,11 +21,12 @@ body {
     font-weight: bold;
   }
   .container{
-    background-color: black;
     position: relative;
-    left: 20%;
+    margin: auto;
     top: 7em;
     width: fit-content;
+    display: flex;
+    flex-direction: row;
   }
   .tab{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -35,6 +36,7 @@ body {
     width: 14em;
     text-align: center;
     border-radius: 1em;
+    margin: 1em;
   }
   .tabImage{
     padding-top: 1em;
