@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100%;
+    align-items: center;
   }
   .about-us-box {
     position: relative;
@@ -25,8 +26,14 @@ body {
     margin: auto;
     top: 7em;
     width: fit-content;
+    width: -moz-fit-content; /* For Firefox compatibility */
+    width: -webkit-fit-content; /* For Safari compatibility */
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
   }
   .tab{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -54,6 +61,20 @@ body {
     background-color: #13274f;
   }
   @media only screen and (max-width: 480px) {
-
-
+    .about-us-box {
+      width: 80%;
+      height: 3em;
+      font-size: 24px;
+    }
+    .container{
+      top: 3em;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+    }
+    .tab{
+      width: 11em;
+      height: 20em;
+      margin: 0.5em;
+    }
   }
