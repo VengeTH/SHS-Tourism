@@ -53,6 +53,7 @@ a{
     flex-direction: column;
     margin: 1em;
     background-color: #002877;
+
 }.exploreText, .touristSpot {
     width: -moz-fit-content; /* For Firefox compatibility */
     width: -webkit-fit-content; /* For Safari compatibility */
