@@ -53,3 +53,7 @@ body {
   footer{
     background-color: #13274f;
   }
+  @media only screen and (max-width: 480px) {
+
+
+  }
