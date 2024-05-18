@@ -160,6 +160,7 @@ footer{
     .placeholder{
         position: relative;
         align-items: center;
+        margin: auto;
     }
     .touristImage{
         display: flex;
