@@ -6,7 +6,7 @@ body {
     margin: 0;
     min-height: 100%;
     background-color: white;
-    padding-bottom: 6rem;
+    padding-bottom: 9rem;
 }
 header {
     position: relative;
@@ -108,8 +108,8 @@ footer a{
 }
 .contactUs{
     position: relative;
-    top: .6em;
-    left: 42vw;
+    top: 0em;
+    left: 41vw;
     width: 50vw;
 }
 .abtUs{
@@ -127,19 +127,24 @@ footer a{
 }
 .ig{
     position: relative;
-    top: 1.2em;
+    top: 1.3em;
     left: 7%;
-    width: 5%;
+    width: 6%;
 }
 .fb{
     position: relative;
-    top: 1.1em;
+    top: 1.2em;
     left: 8%;
-    width: 4.8%;
+    width: 5.8%;
 }
 @media only screen and (max-width: 480px){
     header{
         top: -0.43em;
+        left: 0;
+        right: 0;
+    }
+    body{
+        padding-bottom: 10rem;
     }
     .placeholder{
         position: relative;
@@ -178,5 +183,22 @@ footer a{
         border-radius: 6px;
         position: relative;
         top: -1.2em;
+    }
+    footer{
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .contactUs{
+        top: .6em;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .ig{
+        width: 25%;
+    }
+    .fb{
+        width: 25%;
     }
 }
