@@ -34,6 +34,7 @@ body {
     align-content: center;
     justify-content: space-between;
     align-items: center;
+    animation: slide-right 1s forwards;
   }
   .tab{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -76,5 +77,13 @@ body {
       width: 11em;
       height: 20em;
       margin: 0.5em;
+    }
+  }
+  @keyframes slide-right{
+    from{
+      right:-100%;
+    }
+    to{
+      right:0;
     }
   }
