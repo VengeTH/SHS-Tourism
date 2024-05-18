@@ -103,14 +103,16 @@ footer{
     margin-top: auto;
     height: 6em;
 }
-footer a{
+.abtUs a{
     display: inline-block;
 }
 .contactUs{
     position: relative;
-    top: 0em;
-    left: 41vw;
-    width: 50vw;
+    top: -1.6em;
+    left: 39vw;
+    width: fit-content;
+    width: -moz-fit-content; /* For Firefox compatibility */
+    width: -webkit-fit-content; /* For Safari compatibility */
 }
 .abtUs{
     background-color: #13ae5b;
@@ -125,17 +127,25 @@ footer a{
     font-weight: bold;
     font-size: large;
 }
-.ig{
+.logos{
+    display: flex;
     position: relative;
-    top: 1.3em;
-    left: 7%;
-    width: 6%;
+    justify-content: space-around;
+    align-items: center;
+    top: 1.7em;
+    left: 60em;
+    height: fit-content;
+    height: -moz-fit-content; /* For Firefox compatibility */
+    height: -webkit-fit-content; /* For Safari compatibility */
+    width: fit-content;
+    width: -moz-fit-content; /* For Firefox compatibility */
+    width: -webkit-fit-content; /* For Safari compatibility */
+    height: -moz-fit-content; /* For Firefox compatibility */
+    height: -webkit-fit-content; /* For Safari compatibility */
 }
-.fb{
-    position: relative;
-    top: 1.2em;
-    left: 8%;
-    width: 5.8%;
+.logos a{
+    display: inline-block;
+    width: 50%;
 }
 @media only screen and (max-width: 480px){
     header{
