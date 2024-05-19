@@ -8,6 +8,7 @@
 			charset="utf-8" />
 		<link rel="stylesheet" href="jez.css" />
 		<link rel="icon" href="/images/jez.jpg" type="image/x-icon" />
+		<!-- <script src="jez.js"></script> -->
 	</head>
 	<header>
 		<div>
@@ -145,4 +146,24 @@
 			</a>
 		</div>
 	</footer>
+	<!-- <script>
+		document.addEventListener("beforeunload", function(event) {
+			const placeholder = document.querySelector("placeholder");
+			var anim = [
+				{
+					transform: 'translateY(150%)'
+				},
+				{
+					transform: 'translateY(0%)'
+				}
+			];
+			var setting = {
+				duration: 1000,
+				iterations: 1,
+				fill: 'forwards',
+			};
+			event.returnValue = "Are you sure you want to leave?";
+			placeholder.animate(anim, setting);
+		});
+	</script> -->
 </html>
