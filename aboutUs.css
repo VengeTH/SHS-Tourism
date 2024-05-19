@@ -74,9 +74,6 @@ body {
     margin-top: auto;
     height: 6em;
   }
-  .abtUs a {
-    display: inline-block;
-  }
   .contactUs {
     width: fit-content;
     width: -moz-fit-content; /* For Firefox compatibility */
@@ -94,6 +91,13 @@ body {
     align-items: center;
     font-weight: bold;
     font-size: large;
+    transition: 0.3s ease;
+  }
+  .abtUs a {
+    display: inline-block;
+  }
+  .abtUs:hover{
+    transform: scale(1.1);
   }
   .logos {
     display: flex;
@@ -111,6 +115,17 @@ body {
   .logos a {
     display: inline-block;
     text-align: center; /* Centering using inline-block*/
+  }
+  .fb{
+      transition: 0.3s ease;
+  }
+  .fb:hover{
+      transform: scale(1.1);
+  }.ig{
+      transition: 0.3s ease;
+  }
+  .ig:hover{
+      transform: scale(1.1);
   }
   @media only screen and (max-width: 480px) {
     body{
