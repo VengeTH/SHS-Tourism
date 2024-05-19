@@ -1,227 +1,226 @@
-html{
-    height: 100%;
+html {
+	/* By default, Height is already set to 100%, unless you use absolute positoning. */
+	height: 100%;
 }
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* Do not use relative or absolute positioning unless necessary. */
 body {
-    position: relative;
-    margin: 0;
-    min-height: 100%;
-    background-color: white;
-    padding-bottom: 9rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	flex-wrap: nowrap;
+	background-color: white;
 }
 header {
-    position: relative;
-    color: white;
-    display: flex;
-    background-color: #13274f;
-    top: -0.472em;
-    left: 0;
-    right: 0;
-    height: 6em;
-    justify-content: space-between;
-    align-items: center;
+	position: sticky;
+	position: -webkit-sticky; /* For Safari compatibility */
+	top: 0;
+	z-index: 1000;
+	color: white;
+	display: flex;
+	background-color: #13274f;
+	height: 6em;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
 }
-a{
-    text-decoration: none;
+.textTitle {
+	text-align: center;
 }
-.placeholder{
-    display: flex;
-    flex-wrap: wrap;
-}
-.textTitle{
-    text-align: center;
-}
-.exploreText{
-    position: relative;
-    margin: auto;
-    top: 1.5em;
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    background-color: black;
-    border-radius: 5px;
-    padding: 10px;
-}
-.touristSpot{
-    color: white;
-    border: 1px solid;
-    border-radius: 5px;
-    position: relative;
-    top: 3em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    margin: 1em;
-    background-color: #002877;
-
-}.exploreText, .touristSpot {
-    width: -moz-fit-content; /* For Firefox compatibility */
-    width: -webkit-fit-content; /* For Safari compatibility */
-    width: fit-content; /* Standard */
+a {
+	text-decoration: none;
 }
 
-.touristLearnMore{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    font-size: large;
-    height: auto;
-    color: white;
-    background-color: #13ae5b;
-    padding: 4px;
-    border: 3px solid #006436;
-    border-radius: 3px;
-    position: relative;
-    top: -1.5em;
+.placeholder {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
-.touristImage{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 18em;
-    height: 15em;
+
+.exploreText {
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	background-color: black;
+	border-radius: 5px;
+	padding: 0.9em;
 }
-.touristImage img{
-    position: relative;
-    top: -1em;
-    border: 1px solid white;
-    border-radius: 3px;
-    width: 55%;
+.touristSpot {
+	flex-grow: 1;
+	padding: 1rem 0; /*** 1rem up and down, 0 padding on left and right. ***/
+	color: white;
+	border: 1px solid;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1em 1rem;
+	background-color: #002877;
 }
-.touristText{
-    font-size: medium;
-    font-weight: 500;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    position: relative;
-    top: -2.5em;
+.exploreText,
+.touristSpot {
+	width: -moz-fit-content; /* For Firefox compatibility */
+	width: -webkit-fit-content; /* For Safari compatibility */
+	width: fit-content; /* Standard */
 }
-footer{
-    position: absolute;
-    color: white;
-    background-color: #13274f;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin-top: auto;
-    height: 6em;
+
+.touristLearnMore {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	font-weight: bold;
+	font-size: large;
+	height: auto;
+	color: white;
+	background-color: #13ae5b;
+	padding: 4px;
+	border: 3px solid #006436;
+	border-radius: 3px;
 }
-.abtUs a{
-    display: inline-block;
+.touristImage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 18em;
+	height: 15em;
 }
-.contactUs{
-    position: relative;
-    top: -1.6em;
-    left: 41vw;
-    width: fit-content;
-    width: -moz-fit-content; /* For Firefox compatibility */
-    width: -webkit-fit-content; /* For Safari compatibility */
+.touristImage img {
+	position: relative;
+	top: -1em;
+	border: 1px solid white;
+	border-radius: 3px;
+	width: 55%;
 }
-.abtUs{
-    background-color: #13ae5b;
-    color: white;
-    border: 3px solid #006436;
-    border-radius: 0.5em;
-    width: 8em;
-    height: 2.4em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: large;
+.touristText {
+	font-size: medium;
+	font-weight: 500;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	position: relative;
+	top: -2.5em;
 }
-.logos{
-    display: flex;
-    position: relative;
-    justify-content: space-around;
-    align-items: center;
-    top: 1.7em;
-    left: 66em;
-    height: fit-content;
-    height: -moz-fit-content; /* For Firefox compatibility */
-    height: -webkit-fit-content; /* For Safari compatibility */
-    width: fit-content;
-    width: -moz-fit-content; /* For Firefox compatibility */
-    width: -webkit-fit-content; /* For Safari compatibility */
-    height: -moz-fit-content; /* For Firefox compatibility */
-    height: -webkit-fit-content; /* For Safari compatibility */
+footer {
+	width: 100%;
+	display: flex;
+	flex-direction: row-reverse;
+	/* gap: 3rem; */
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background-color: #13274f;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-top: auto;
+	height: 6em;
 }
-.logos a{
-    display: inline-block;
-    width: 50%;
+.abtUs a {
+	display: inline-block;
 }
-.fb{
-    position: relative;
-    left: -1em;
+.contactUs {
+	width: fit-content;
+	width: -moz-fit-content; /* For Firefox compatibility */
+	width: -webkit-fit-content; /* For Safari compatibility */
 }
-@media only screen and (max-width: 480px){
-    header{
-        top: -0.43em;
-        left: 0;
-        right: 0;
-    }
-    body{
-        padding-bottom: 10rem;
-    }
-    .placeholder{
-        position: relative;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-    }
-    .touristImage{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width:7.3em;
-        height: 10em;
-    }
-    .touristImage img{
-        position: relative;
-        top: -1em;
-        border: 1px solid white;
-        border-radius: 3px;
-        width: 70%;
-    }
-    .touristText{
-        font-size: small;
-        font-weight: 500;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        position: relative;
-        top: -2.4em;
-    }
-    .touristLearnMore{
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: 500;
-        font-size: large;
-        height: auto;
-        color: white;
-        background-color: #13ae5b;
-        padding: 4px;
-        border: 3px solid #006436;
-        border-radius: 6px;
-        position: relative;
-        top: -1.2em;
-    }
-    footer{
-        left: 0;
-        right: 0;
-        bottom: 1;
-    }
-    .contactUs{
-        top: .6em;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-    .abtUs{
-        position: relative;
-        top: -2em;
-        left: -3.5em;
-    }
-    .logos{
-        left: 15em;
-    }
-    .fb{
-        position: relative;
-        left: -2em;
-    }
+.abtUs {
+	background-color: #13ae5b;
+	color: white;
+	border: 3px solid #006436;
+	border-radius: 0.5em; /* Be consistent on using sizes.  use variables to make it more systematic.*/
+	width: 8em;
+	height: 2.4em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: large;
 }
+.logos {
+	display: flex;
+	position: relative;
+	align-items: center;
+	height: fit-content;
+	height: -moz-fit-content; /* For Firefox compatibility */
+	height: -webkit-fit-content; /* For Safari compatibility */
+	width: fit-content;
+	width: -moz-fit-content; /* For Firefox compatibility */
+	width: -webkit-fit-content; /* For Safari compatibility */
+	height: -moz-fit-content; /* For Firefox compatibility */
+	height: -webkit-fit-content; /* For Safari compatibility */
+}
+.logos a {
+	display: inline-block;
+	text-align: center; /* Centering using inline-block*/
+}
+
+/* @media only screen and (max-width: 480px) {
+	header {
+		top: -0.43em;
+		left: 0;
+		right: 0;
+	}
+
+	.placeholder {
+		position: relative;
+		align-items: center;
+		justify-content: center;
+		margin: auto;
+	}
+	.touristImage {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 7.3em;
+		height: 10em;
+	}
+	.touristImage img {
+		position: relative;
+		top: -1em;
+		border: 1px solid white;
+		border-radius: 3px;
+		width: 70%;
+	}
+	.touristText {
+		font-size: small;
+		font-weight: 500;
+		font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+			sans-serif;
+		position: relative;
+		top: -2.4em;
+	}
+	.touristLearnMore {
+		font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+			sans-serif;
+		font-weight: 500;
+		font-size: large;
+		height: auto;
+		color: white;
+		background-color: #13ae5b;
+		padding: 4px;
+		border: 3px solid #006436;
+		border-radius: 6px;
+		position: relative;
+		top: -1.2em;
+	}
+	footer {
+		left: 0;
+		right: 0;
+		bottom: 1;
+	}
+	.contactUs {
+		top: 0.6em;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	.abtUs {
+		position: relative;
+		top: -2em;
+		left: -3.5em;
+	}
+} */
