@@ -6,5 +6,11 @@ body{
     padding-bottom: 6rem;
 }
 .vid{
-    width: 100vw;
+    height: 80%;
+    width: 80%;
+}
+.vidContainer{
+    margin: auto;
+    justify-content: center;
+    display: flex;
 }
