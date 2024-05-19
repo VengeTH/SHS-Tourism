@@ -5,6 +5,9 @@ body {
     min-height: 100%;
     align-items: center;
   }
+  a{
+    text-decoration: none;
+  }
   .about-us-box {
     position: relative;
     top: 1em;
@@ -57,9 +60,57 @@ body {
     border: 1px solid white;
     border-radius: 3px;
     width: 60%;
-  }
-  footer{
+  }footer {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    color: white;
     background-color: #13274f;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: auto;
+    height: 6em;
+  }
+  .abtUs a {
+    display: inline-block;
+  }
+  .contactUs {
+    width: fit-content;
+    width: -moz-fit-content; /* For Firefox compatibility */
+    width: -webkit-fit-content; /* For Safari compatibility */
+  }
+  .abtUs {
+    background-color: #13ae5b;
+    color: white;
+    border: 3px solid #006436;
+    border-radius: 0.5em; /* Be consistent on using sizes.  use variables to make it more systematic.*/
+    width: 8em;
+    height: 2.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: large;
+  }
+  .logos {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: fit-content;
+    height: -moz-fit-content; /* For Firefox compatibility */
+    height: -webkit-fit-content; /* For Safari compatibility */
+    width: fit-content;
+    width: -moz-fit-content; /* For Firefox compatibility */
+    width: -webkit-fit-content; /* For Safari compatibility */
+    height: -moz-fit-content; /* For Firefox compatibility */
+    height: -webkit-fit-content; /* For Safari compatibility */
+  }
+  .logos a {
+    display: inline-block;
+    text-align: center; /* Centering using inline-block*/
   }
   @media only screen and (max-width: 480px) {
     .about-us-box {

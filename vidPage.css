@@ -1,16 +1,109 @@
+header{
+    height: .5em;
+    background-color: #13274f;
+}
 body{
     position: relative;
     min-height: 100%;
     margin: 0;
     background-color: white;
-    padding-bottom: 6rem;
+    padding-bottom: 10rem;
+}
+a{
+    text-decoration: none;
 }
 .vid{
     height: 80%;
     width: 80%;
 }
 .vidContainer{
+    padding-top: .5em;
     margin: auto;
     justify-content: center;
     display: flex;
+}
+.tabContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
+}
+.descTab{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: #13274f;
+    margin: 1em 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: .3em;
+    padding: 1rem 0;
+}
+.descTab img{
+    position: relative;
+    top: .5em;
+    width: 80%;
+    border-radius: .5em;
+    border: 3px solid white;
+}
+.descText{
+    padding-top: 1em;
+    width: 15em;
+    overflow-wrap: break-word;
+}
+footer {
+	position: absolute;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background-color: #13274f;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-top: auto;
+	height: 6em;
+}
+.abtUs a {
+	display: inline-block;
+}
+.contactUs {
+	width: fit-content;
+	width: -moz-fit-content; /* For Firefox compatibility */
+	width: -webkit-fit-content; /* For Safari compatibility */
+}
+.abtUs {
+	background-color: #13ae5b;
+	color: white;
+	border: 3px solid #006436;
+	border-radius: 0.5em; /* Be consistent on using sizes.  use variables to make it more systematic.*/
+	width: 8em;
+	height: 2.4em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: large;
+}
+.logos {
+	display: flex;
+	position: relative;
+	align-items: center;
+	height: fit-content;
+	height: -moz-fit-content; /* For Firefox compatibility */
+	height: -webkit-fit-content; /* For Safari compatibility */
+	width: fit-content;
+	width: -moz-fit-content; /* For Firefox compatibility */
+	width: -webkit-fit-content; /* For Safari compatibility */
+	height: -moz-fit-content; /* For Firefox compatibility */
+	height: -webkit-fit-content; /* For Safari compatibility */
+}
+.logos a {
+	display: inline-block;
+	text-align: center; /* Centering using inline-block*/
 }
