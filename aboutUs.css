@@ -1,10 +1,10 @@
 body {
     position: relative;
+    align-items: center;
     background-color: #F5F5F5;
     margin: 0;
-    padding-bottom: 6em;
+    padding-bottom: 15em;
     min-height: 100%;
-    align-items: center;
   }
   a{
     text-decoration: none;
